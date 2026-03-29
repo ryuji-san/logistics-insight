@@ -36,7 +36,7 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
               </svg>
             </div>
-            <span className="text-[13px] sm:text-sm font-bold text-gray-900">
+            <span className="text-sm font-bold text-gray-900">
               物流インサイト
             </span>
           </Link>
@@ -74,7 +74,7 @@ export default function Header() {
                 <>
                   <div className="fixed inset-0 z-40" onClick={() => setSizeMenuOpen(false)} />
                   <div className="absolute right-0 top-full mt-1 z-50 bg-white rounded-lg border border-gray-200 shadow-lg py-1 animate-fade-in min-w-[100px]">
-                    <p className="text-[11px] text-gray-400 font-medium px-3 pt-0.5 pb-1">文字サイズ</p>
+                    <p className="text-[12px] sm:text-[11px] text-gray-400 font-medium px-3 pt-0.5 pb-1">文字サイズ</p>
                     {sizeOptions.map((opt) => (
                       <button
                         key={opt.value}

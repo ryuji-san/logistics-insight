@@ -39,7 +39,7 @@ export default function ArticleListPage() {
     <div className="max-w-5xl mx-auto px-3 sm:px-6 py-4 sm:py-8">
       <div className="mb-4 animate-fade-in">
         <h1 className="text-base sm:text-lg font-bold text-gray-900 mb-0.5">記事一覧</h1>
-        <p className="text-[12px] sm:text-[13px] text-gray-400">
+        <p className="text-[13px] sm:text-[13px] text-gray-400">
           物流政策・業界動向の要点と示唆を整理しています
         </p>
       </div>
@@ -55,7 +55,7 @@ export default function ArticleListPage() {
             placeholder="キーワードで検索..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-9 pr-3 py-2 text-[13px] sm:text-sm border border-gray-200 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-400 transition-all"
+            className="w-full pl-9 pr-3 py-2 text-[14px] sm:text-sm border border-gray-200 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-400 transition-all"
           />
         </div>
 
@@ -63,7 +63,7 @@ export default function ArticleListPage() {
         <div className="flex gap-1.5 flex-wrap">
           <button
             onClick={() => handleCategoryChange("")}
-            className={`px-2.5 py-1.5 text-[12px] sm:text-[13px] rounded-lg border font-medium transition-all min-h-[34px] ${
+            className={`px-2.5 py-1.5 text-[13px] sm:text-[13px] rounded-lg border font-medium transition-all min-h-[34px] ${
               !selectedCategory
                 ? "bg-primary-600 text-white border-primary-600"
                 : "bg-white text-gray-500 border-gray-200 hover:border-gray-300"
@@ -75,7 +75,7 @@ export default function ArticleListPage() {
             <button
               key={cat}
               onClick={() => handleCategoryChange(cat)}
-              className={`px-2.5 py-1.5 text-[12px] sm:text-[13px] rounded-lg border font-medium transition-all min-h-[34px] ${
+              className={`px-2.5 py-1.5 text-[13px] sm:text-[13px] rounded-lg border font-medium transition-all min-h-[34px] ${
                 selectedCategory === cat
                   ? "bg-primary-600 text-white border-primary-600"
                   : "bg-white text-gray-500 border-gray-200 hover:border-gray-300"
@@ -90,10 +90,10 @@ export default function ArticleListPage() {
       {/* Results */}
       {filtered.length === 0 ? (
         <div className="text-center py-12 animate-fade-in">
-          <p className="text-[13px] text-gray-400 mb-2">該当する記事が見つかりません</p>
+          <p className="text-[14px] sm:text-[13px] text-gray-400 mb-2">該当する記事が見つかりません</p>
           <button
             onClick={() => { setSearch(""); handleCategoryChange(""); }}
-            className="text-[13px] text-primary-600 hover:text-primary-700 font-medium"
+            className="text-[14px] sm:text-[13px] text-primary-600 hover:text-primary-700 font-medium"
           >
             フィルターをリセット
           </button>
@@ -110,7 +110,7 @@ export default function ArticleListPage() {
         </div>
       )}
 
-      <p className="text-[11px] text-gray-400 mt-5 text-center">{filtered.length}件表示</p>
+      <p className="text-[12px] sm:text-[11px] text-gray-400 mt-5 text-center">{filtered.length}件表示</p>
     </div>
   );
 }
