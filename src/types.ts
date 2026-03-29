@@ -11,4 +11,5 @@ export interface Article {
   featured: boolean;
   relatedThemes: string[];
   importance?: number; // 1-100 重要度スコア
+  actionItems?: string[]; // 具体的アクション
 }

@@ -19,6 +19,11 @@ const curatedArticles: Article[] = [
     featured: true,
     relatedThemes: ["倉庫自動化", "ラストワンマイル", "人手不足対策"],
     importance: 88,
+    actionItems: [
+      "倉庫のピッキング工程を対象に、ロボット導入のコスト試算と補助金制度を調査する",
+      "AI・ロボティクス関連の国の補助金公募スケジュールを確認し、申請準備を進める",
+      "自動化ロードマップの社内勉強会を企画し、現場責任者と導入優先度を議論する",
+    ],
   },
   {
     id: "mlit-logistics-policy-2030",
@@ -27,7 +32,7 @@ const curatedArticles: Article[] = [
     publishedAt: "2024-08-30",
     sourceName: "国土交通省",
     sourceUrl:
-      "https://www.mlit.go.jp/seisakutokatsu/freight/butsuryu_sesaku.html",
+      "https://www.mlit.go.jp/seisakutokatsu/freight/butsuryu03100.html",
     summary:
       "次期総合物流施策大綱（2026〜2030年度）の策定に向けた有識者検討会の提言。2024年問題以降の物流持続可能性確保を最重要課題とし、①標準化・効率化、②デジタル化、③グリーン物流、④人材確保の4本柱で政策方向性を提示。",
     implication:
@@ -36,6 +41,11 @@ const curatedArticles: Article[] = [
     featured: true,
     relatedThemes: ["2024年問題", "パレット標準化", "モーダルシフト", "ドライバー確保"],
     importance: 95,
+    actionItems: [
+      "パレット標準化への対応状況を倉庫・配送拠点ごとに棚卸しする",
+      "荷主との運賃交渉に向け、適正運賃の根拠資料を整理する",
+      "共同配送の連携候補企業をリストアップし、打診を開始する",
+    ],
   },
   {
     id: "meti-physical-internet-roadmap",
@@ -45,6 +55,7 @@ const curatedArticles: Article[] = [
     sourceName: "経済産業省",
     sourceUrl:
       "https://www.meti.go.jp/shingikai/mono_info_service/physical_internet/index.html",
+
     summary:
       "経済産業省が策定したフィジカルインターネット実現に向けたロードマップ。荷物を標準化された容器で共有ネットワーク上を最適ルートで輸送する概念。2040年の完全実現を見据えた3段階アプローチを提示。",
     implication:
@@ -53,6 +64,10 @@ const curatedArticles: Article[] = [
     featured: true,
     relatedThemes: ["共同配送", "データ連携", "パレット標準化", "物流ネットワーク最適化"],
     importance: 92,
+    actionItems: [
+      "社内システムのAPI化対応状況を棚卸しし、標準データフォーマットへの移行計画を立てる",
+      "フィジカルインターネット関連の業界団体・研究会への参加を検討する",
+    ],
   },
   {
     id: "mlit-2024-problem-followup",
@@ -60,7 +75,7 @@ const curatedArticles: Article[] = [
     category: "物流政策",
     publishedAt: "2025-02-14",
     sourceName: "国土交通省",
-    sourceUrl: "https://www.mlit.go.jp/jidosha/jidosha_tk4_000113.html",
+    sourceUrl: "https://www.mlit.go.jp/seisakutokatsu/freight/seisakutokatsu_freight_mn1_000023.html",
     summary:
       "2024年4月の時間外労働上限規制適用後の実態調査。ドライバーの労働時間は平均8.2%短縮された一方、輸送能力の不足が特定路線で顕在化。中継輸送の導入企業は前年比2.3倍に増加。",
     implication:
@@ -69,6 +84,10 @@ const curatedArticles: Article[] = [
     featured: false,
     relatedThemes: ["2024年問題", "ドライバー確保", "中継輸送"],
     importance: 90,
+    actionItems: [
+      "長距離幹線便の中継輸送ポイント候補を選定し、パイロット運用の計画を作成する",
+      "荷待ち時間の実態データを集計し、荷主との改善交渉の資料にまとめる",
+    ],
   },
   {
     id: "autonomous-driving-truck-2025",
@@ -85,6 +104,11 @@ const curatedArticles: Article[] = [
     featured: true,
     relatedThemes: ["倉庫自動化", "ドライバー確保", "人手不足対策"],
     importance: 93,
+    actionItems: [
+      "自動運転トラックの実証プロジェクトへの参加可否を経営会議で議論する",
+      "2027年商用化を見据え、対象路線（新東名等）の幹線便データを整理する",
+      "自動運転技術メーカーとの情報交換の場を設定する",
+    ],
   },
   {
     id: "green-logistics-guideline-2025",
@@ -92,7 +116,7 @@ const curatedArticles: Article[] = [
     category: "サステナビリティ",
     publishedAt: "2025-01-22",
     sourceName: "国土交通省・経済産業省",
-    sourceUrl: "https://www.mlit.go.jp/seisakutokatsu/freight/green_logistics.html",
+    sourceUrl: "https://www.mlit.go.jp/seisakutokatsu/freight/GreenLogisticsPartnership.html",
     summary:
       "カーボンニュートラルに向けたグリーン物流ガイドラインの改定版。CO2排出量の算定方法を国際標準に統一。荷主企業へのCO2可視化義務化スケジュール（2027年度〜）も盛り込み。",
     implication:
@@ -101,6 +125,10 @@ const curatedArticles: Article[] = [
     featured: false,
     relatedThemes: ["モーダルシフト", "EV導入", "サステナビリティ"],
     importance: 85,
+    actionItems: [
+      "現在のCO2排出量算定方法を確認し、国際標準との差分を洗い出す",
+      "荷主向けCO2排出レポートのフォーマット案を作成し、試験的に提供を開始する",
+    ],
   },
   {
     id: "logistics-dx-platform-report",
@@ -108,7 +136,7 @@ const curatedArticles: Article[] = [
     category: "物流DX",
     publishedAt: "2025-03-05",
     sourceName: "デジタル庁・国土交通省",
-    sourceUrl: "https://www.digital.go.jp/policies/logistics-dx",
+    sourceUrl: "https://www.digital.go.jp/policies/mobility",
     summary:
       "物流データの官民連携プラットフォーム構築に向けた検討報告書。「物流データハイウェイ」構想を提示。API標準仕様の策定状況、中小事業者向けSaaS型ツールの提供計画をまとめている。",
     implication:
@@ -117,6 +145,10 @@ const curatedArticles: Article[] = [
     featured: true,
     relatedThemes: ["データ連携", "物流ネットワーク最適化", "共同配送"],
     importance: 87,
+    actionItems: [
+      "社内システムのAPI対応状況を棚卸しし、物流データハイウェイ接続の準備計画を立てる",
+      "中小事業者向けSaaSツールの提供開始時に試用登録する担当者を決める",
+    ],
   },
   {
     id: "drone-delivery-regulation-2025",
@@ -133,14 +165,18 @@ const curatedArticles: Article[] = [
     featured: false,
     relatedThemes: ["ラストワンマイル", "倉庫自動化", "人手不足対策"],
     importance: 78,
+    actionItems: [
+      "過疎地・離島エリアの配送案件でドローン活用の実現可能性を調査する",
+      "ドローン配送の実証実験を行っている企業・自治体との連携を模索する",
+    ],
   },
   {
     id: "foreign-workers-logistics-2025",
     title: "物流分野における外国人材活用の実態と課題",
     category: "人材・労務",
     publishedAt: "2025-01-30",
-    sourceName: "厚生労働省",
-    sourceUrl: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/foreign_worker_logistics.html",
+    sourceName: "国土交通省",
+    sourceUrl: "https://www.mlit.go.jp/jidosha/jidosha_tk1_000038.html",
     summary:
       "物流分野における外国人労働者の就労実態調査結果。特定技能制度を活用した就労者数は前年比45%増。多言語対応のマニュアル整備や生活支援が定着率向上のカギとなることが示された。",
     implication:
@@ -149,6 +185,10 @@ const curatedArticles: Article[] = [
     featured: false,
     relatedThemes: ["人手不足対策", "ドライバー確保"],
     importance: 80,
+    actionItems: [
+      "人事部門と連携し、特定技能制度を活用した外国人材の受入れ計画を策定する",
+      "多言語対応の業務マニュアル（倉庫・配送）の整備に着手する",
+    ],
   },
 ];
 

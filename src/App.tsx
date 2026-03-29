@@ -17,8 +17,8 @@ export default function App() {
             <Route path="/articles/:id" element={<ArticleDetailPage />} />
           </Routes>
         </main>
-        <footer className="border-t border-gray-100 bg-white/60">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 py-5 text-center">
+        <footer className="border-t border-gray-100 bg-white/50">
+          <div className="max-w-5xl mx-auto px-3 sm:px-6 py-3 text-center">
             <p className="text-[11px] text-gray-300">
               物流インサイト — 社内向け物流政策・業界動向レポート
             </p>
